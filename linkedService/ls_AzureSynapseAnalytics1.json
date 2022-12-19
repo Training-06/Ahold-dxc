@@ -1,0 +1,18 @@
+{
+	"name": "ls_AzureSynapseAnalytics1",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDW",
+		"typeProperties": {
+			"connectionString": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=ahold-dxc-ws.sql.azuresynapse.net;Initial Catalog=ahold_dxc_sql_pool;User ID=ahold_dxc_synapse_server_admin",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "synapsepwd"
+			}
+		}
+	}
+}
