@@ -233,12 +233,6 @@
 				}
 			}
 		],
-		"parameters": {
-			"Source": {
-				"type": "string",
-				"defaultValue": "TED"
-			}
-		},
 		"annotations": []
 	}
 }
