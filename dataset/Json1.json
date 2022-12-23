@@ -1,28 +1,21 @@
 {
-	"name": "DelimitedText1",
+	"name": "Json1",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLakeStorage1",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
-		"type": "DelimitedText",
+		"type": "Json",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "sam_adf.txt",
-				"folderPath": "Input_paths",
+				"fileName": "dataload",
+				"folderPath": "output_folder",
 				"fileSystem": "ns01container"
-			},
-			"columnDelimiter": ",",
-			"escapeChar": "\\",
-			"quoteChar": "\""
-		},
-		"schema": [
-			{
-				"type": "String"
 			}
-		]
+		},
+		"schema": {}
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"
 }

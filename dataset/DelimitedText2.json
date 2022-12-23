@@ -1,5 +1,5 @@
 {
-	"name": "DelimitedText1",
+	"name": "DelimitedText2",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLakeStorage1",
@@ -10,19 +10,15 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "sam_adf.txt",
-				"folderPath": "Input_paths",
+				"fileName": "web_op.json",
+				"folderPath": "output_folder",
 				"fileSystem": "ns01container"
 			},
 			"columnDelimiter": ",",
-			"escapeChar": "\\",
-			"quoteChar": "\""
+			"escapeChar": "",
+			"quoteChar": ""
 		},
-		"schema": [
-			{
-				"type": "String"
-			}
-		]
+		"schema": []
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"
 }
